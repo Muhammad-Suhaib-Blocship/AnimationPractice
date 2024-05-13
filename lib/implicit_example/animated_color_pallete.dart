@@ -47,6 +47,7 @@ class _AnimatedColorPaletteState extends State<AnimatedColorPalette> {
             for (Color color in currentPalette)
               AnimatedContainer(
                 duration: const Duration(milliseconds: 500),
+                curve: Curves.slowMiddle,
                 height: 100,
                 width: 100,
                 color: color,
